@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +14,27 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             background-color: #444;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
+
         nav a {
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
         }
+
         section {
             padding: 20px;
             max-width: 1000px;
@@ -37,6 +42,7 @@
             background-color: #fff;
             margin-top: 20px;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -45,35 +51,60 @@
             bottom: 0;
             height: 25px;
             width: 100%;
-            margin-top: 10px; /* 增加顶部外边距 */
-            margin-bottom: 10px; /* 增加底部外边距 */
-            padding-bottom: 7px; /* 增加底部内边距 */
+            margin-top: 10px;
+            /* 增加顶部外边距 */
+            margin-bottom: 10px;
+            /* 增加底部外边距 */
+            padding-bottom: 7px;
+            /* 增加底部内边距 */
         }
+
         h2 {
             color: #333;
         }
+
         .gallery {
             position: relative;
             max-width: 1000px;
             margin: 20px auto;
         }
+
         .gallery .slide {
             width: 100%;
-            display: none; /* 初始时隐藏所有轮播项 */
+            display: none;
+            /* 初始时隐藏所有轮播项 */
             text-align: center;
         }
+
         .gallery .slide.active {
-            display: block; /* 显示当前活动的轮播项 */
+            display: block;
+            /* 显示当前活动的轮播项 */
         }
+
         .gallery img {
             max-width: 1000px;
             border-radius: 8px;
         }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                /* 让图片宽度适应屏幕 */
+            }
+
+            .description {
+                font-size: 14px;
+                /* 缩小文字大小，适合手机阅读 */
+            }
+        }
+
         .description {
             font-size: 16px;
             color: #666;
         }
-        .prev, .next {
+
+        .prev,
+        .next {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -83,14 +114,17 @@
             padding: 10px;
             cursor: pointer;
         }
+
         .prev {
             left: 10px;
         }
+
         .next {
             right: 10px;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
@@ -111,7 +145,8 @@
     <section id="intro">
         <h2>项目介绍</h2>
         <p><strong>梧桐树洞</strong> 是由华中科技大学学生团队开发的社交平台，旨在为用户提供一个可以自由分享生活、表达情绪、以及匿名交流的空间。</p>
-        <p>在这里，无论是地理上遥远的人们，还是生活中亲近的朋友，都将与您分享各自的生活和心声，增加彼此间的神秘感和联系。我们致力于打造一个既能保持个体独立性又能促进紧密社群联系的平台，让每个人都能参与不同的生活，看见不一样的世界。</p>
+        <p>在这里，无论是地理上遥远的人们，还是生活中亲近的朋友，都将与您分享各自的生活和心声，增加彼此间的神秘感和联系。我们致力于打造一个既能保持个体独立性又能促进紧密社群联系的平台，让每个人都能参与不同的生活，看见不一样的世界。
+        </p>
     </section>
 
     <!-- Gallery Section (Software Screenshots) -->
@@ -119,23 +154,23 @@
         <h2>软件页面展示</h2>
         <div class="gallery">
             <div class="slide active">
-                <img src="login_page.png" alt="梧桐树洞登陆界面">
+                <img src="src/login_page.png" alt="梧桐树洞登陆界面">
                 <p class="description"><strong>梧桐树洞</strong> 登陆界面 - 新朋友，欢迎来到梧桐树洞！</p>
             </div>
             <div class="slide">
-                <img src="homepage.png" alt="我的帖子">
+                <img src="src/homepage.png" alt="我的帖子">
                 <p class="description"><strong>我的帖子</strong> - 哇！原来我的生活<strong>丰富多彩</strong>！</p>
             </div>
             <div class="slide">
-                <img src="heatedtopic.png" alt="热门推荐！">
+                <img src="src/heatedtopic.png" alt="热门推荐！">
                 <p class="description"><strong>热门推荐！</strong> - 朋友们<strong>最关心</strong>的问题</p>
             </div>
             <div class="slide">
-                <img src="playground.png" alt="交流广场">
+                <img src="src/playground.png" alt="交流广场">
                 <p class="description"><strong>交流广场</strong> - <strong>最关心</strong>的问题，<strong>最快速</strong>的搜寻</p>
             </div>
             <div class="slide">
-                <img src="post.png" alt="树洞发帖">
+                <img src="src/post.png" alt="树洞发帖">
                 <p class="description"><strong>树洞帖子</strong> - 梧桐树洞的<strong>专属匿名讨论空间</strong>，尽情自由表达真实感受！</p>
             </div>
             <span class="prev">&#10094;</span>
@@ -161,7 +196,9 @@
         <p>您可以通过以下方式下载 <strong>梧桐树洞</strong> 软件：</p>
         <ul>
             <li>访问我们的官方网站，选择适合您的设备的版本进行下载。</li>
-            <li><a href="treehole.apk.1" target="_blank" target="_blank" style="color: black; font-weight: bold; text-decoration: underline;">点击此处下载安装包！</a>让我们一起开启<strong>梧桐树洞之旅</strong>！</li>
+            <li><a href="src/treehole.apk.1" target="_blank" target="_blank"
+                    style="color: black; font-weight: bold; text-decoration: underline;">点击此处下载安装包！</a>让我们一起开启<strong>梧桐树洞之旅</strong>！
+            </li>
         </ul>
     </section>
 
@@ -207,4 +244,5 @@
     </script>
 
 </body>
+
 </html>
