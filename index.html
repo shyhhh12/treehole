@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="梧桐树洞 - 您的全新生活体验">
+    <title>梧桐树洞 - 软件项目介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            /* padding: 10px; */
+            bottom: 0;
+            height: 25px;
+            width: 100%;
+            margin-top: 10px; /* 增加顶部外边距 */
+            margin-bottom: 10px; /* 增加底部外边距 */
+            padding-bottom: 7px; /* 增加底部内边距 */
+        }
+        h2 {
+            color: #333;
+        }
+        .gallery {
+            position: relative;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .gallery .slide {
+            width: 100%;
+            display: none; /* 初始时隐藏所有轮播项 */
+            text-align: center;
+        }
+        .gallery .slide.active {
+            display: block; /* 显示当前活动的轮播项 */
+        }
+        .gallery img {
+            max-width: 1000px;
+            border-radius: 8px;
+        }
+        .description {
+            font-size: 16px;
+            color: #666;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>梧桐树洞</h1>
+        <p>梧桐树洞，静候心语的秘密花园，您的全新生活体验</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#intro">项目介绍</a>
+        <a href="#gallery">页面展示</a>
+        <a href="#usage">使用方法</a>
+        <a href="#download">获取软件</a>
+    </nav>
+
+    <!-- Project Introduction Section -->
+    <section id="intro">
+        <h2>项目介绍</h2>
+        <p><strong>梧桐树洞</strong> 是由华中科技大学学生团队开发的社交平台，旨在为用户提供一个可以自由分享生活、表达情绪、以及匿名交流的空间。</p>
+        <p>在这里，无论是地理上遥远的人们，还是生活中亲近的朋友，都将与您分享各自的生活和心声，增加彼此间的神秘感和联系。我们致力于打造一个既能保持个体独立性又能促进紧密社群联系的平台，让每个人都能参与不同的生活，看见不一样的世界。</p>
+    </section>
+
+    <!-- Gallery Section (Software Screenshots) -->
+    <section id="gallery">
+        <h2>软件页面展示</h2>
+        <div class="gallery">
+            <div class="slide active">
+                <img src="login_page.png" alt="梧桐树洞登陆界面">
+                <p class="description"><strong>梧桐树洞</strong> 登陆界面 - 新朋友，欢迎来到梧桐树洞！</p>
+            </div>
+            <div class="slide">
+                <img src="homepage.png" alt="我的帖子">
+                <p class="description"><strong>我的帖子</strong> - 哇！原来我的生活<strong>丰富多彩</strong>！</p>
+            </div>
+            <div class="slide">
+                <img src="heatedtopic.png" alt="热门推荐！">
+                <p class="description"><strong>热门推荐！</strong> - 朋友们<strong>最关心</strong>的问题</p>
+            </div>
+            <div class="slide">
+                <img src="playground.png" alt="交流广场">
+                <p class="description"><strong>交流广场</strong> - <strong>最关心</strong>的问题，<strong>最快速</strong>的搜寻</p>
+            </div>
+            <div class="slide">
+                <img src="post.png" alt="树洞发帖">
+                <p class="description"><strong>树洞帖子</strong> - 梧桐树洞的<strong>专属匿名讨论空间</strong>，尽情自由表达真实感受！</p>
+            </div>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+
+    <!-- Software Usage Section -->
+    <section id="usage">
+        <h2>软件使用方法</h2>
+        <p>使用 <strong>梧桐树洞</strong> 很简单，您只进行简单的几步：</p>
+        <ol>
+            <li>在该页面下载并安装 <strong>梧桐树洞</strong> 软件。</li>
+            <li>通过 <strong>邮箱</strong> 创建账户，即可开启不一样的 <strong>树洞之旅</strong>。</li>
+            <li>您可以匿名分享生活日常，也可以发帖询问来解决生活疑虑，支持文字、图片等多种形式。</li>
+            <li>浏览其他用户的帖子，进行互动和交流。</li>
+        </ol>
+    </section>
+
+    <!-- Software Download Section -->
+    <section id="download">
+        <h2>如何获取软件</h2>
+        <p>您可以通过以下方式下载 <strong>梧桐树洞</strong> 软件：</p>
+        <ul>
+            <li>访问我们的官方网站，选择适合您的设备的版本进行下载。</li>
+            <li><a href="treehole.apk.1" target="_blank" target="_blank" style="color: black; font-weight: bold; text-decoration: underline;">点击此处下载安装包！</a>让我们一起开启<strong>梧桐树洞之旅</strong>！</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 HUST-CS2205-梧桐树洞</p>
+    </footer>
+
+    <script>
+        // 图片轮播逻辑
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.gallery .slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+
+        // 显示当前轮播项
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        // 显示上一张轮播项
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        // 显示下一张轮播项
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        // 自动切换轮播项（每3秒切换一次）
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, 3000);
+    </script>
+
+</body>
+</html>
